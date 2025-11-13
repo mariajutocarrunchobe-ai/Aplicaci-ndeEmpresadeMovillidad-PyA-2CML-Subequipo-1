@@ -2,6 +2,9 @@ from .persona import Persona
 class Conductor(Persona):
     def __init__(self, nombre, telefono, correo, cedula, genero):
         super().__init__(nombre, telefono, correo)
+        self.nombre = nombre
+        self.telefono = telefono
+        self.correo = correo
         self.cedula = cedula
         self.genero = genero
     def info(self):
